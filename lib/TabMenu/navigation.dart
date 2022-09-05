@@ -27,7 +27,12 @@ class NavigationDrawerWidget extends StatelessWidget {
               children: [
                 const SizedBox(height: 48),
                 buildSearchField(),
-                const SizedBox(height: 24),
+                const SizedBox(height: 48),
+                buildMenuItem(
+                  text: 'Order',
+                  icon: Icons.shopping_bag_outlined,
+                ),
+                const SizedBox(height: 48),
                 buildMenuItem(
                   text: 'People',
                   icon: Icons.people,
@@ -89,16 +94,10 @@ class NavigationDrawerWidget extends StatelessWidget {
                   const SizedBox(height: 4),
                   Text(
                     email,
-                    style: TextStyle(fontSize: 14, color: Colors.white),
+                    style: TextStyle(fontSize: 16, color: Colors.white),
                   ),
                 ],
               ),
-              Spacer(),
-              CircleAvatar(
-                radius: 24,
-                backgroundColor: Color.fromRGBO(30, 60, 168, 1),
-                child: Icon(Icons.add_comment_outlined, color: Colors.white),
-              )
             ],
           ),
         ),

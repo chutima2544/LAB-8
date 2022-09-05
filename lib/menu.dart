@@ -33,6 +33,11 @@ class _MenuState extends State<Menu> {
       itemCount: foodlists.length,
       itemBuilder: (context,index){
         return Card(
+          color: Color.fromARGB(255, 225, 197, 159),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12.0)
+          ),
+          elevation: 8,
           child: Container(
             height: 100,
             width: double.infinity,
@@ -46,7 +51,8 @@ class _MenuState extends State<Menu> {
                       width: 250,
                       ),
                       Container(
-                        padding: EdgeInsets.symmetric(horizontal: 10,vertical: 5),
+                        padding: EdgeInsets.symmetric(horizontal: 16,vertical: 24),
+                        height: MediaQuery.of(context).size.height * 0.35,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -80,7 +86,8 @@ class _MenuState extends State<Menu> {
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 15,
-                      ),),
+                      ),
+                    ),
                   ),
                 ),
               ],
