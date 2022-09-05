@@ -29,8 +29,8 @@ class NavigationDrawerWidget extends StatelessWidget {
                 buildSearchField(),
                 const SizedBox(height: 48),
                 buildMenuItem(
-                  text: 'Order',
-                  icon: Icons.shopping_bag_outlined,
+                  text: 'notifications',
+                  icon: Icons.notifications,
                 ),
                 const SizedBox(height: 48),
                 buildMenuItem(
@@ -40,7 +40,7 @@ class NavigationDrawerWidget extends StatelessWidget {
                 const SizedBox(height: 48),
                 buildMenuItem(
                   text: 'Favourites',
-                  icon: Icons.favorite_border,
+                  icon: Icons.favorite
                 ),
                 const SizedBox(height: 48),
                 buildMenuItem(
